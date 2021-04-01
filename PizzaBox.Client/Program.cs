@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using PizzaBox.Domain.Abstracts;
 using PizzaBox.Domain.Models;
+using PizzaBox.Domain.Singletons;
 
 namespace PizzaBox.Client
 {
@@ -16,13 +17,10 @@ namespace PizzaBox.Client
     {
       System.Console.WriteLine("Welcome to PizzaBox");
 
-      var stores = new List<AStore>()
-      {
-        new NewYorkStore(),
-        new ChicagoStore()
-      };
+      var storeSingleton = StoreSingleton.Instance;
+      // var s2 = new StoreSingleton();
 
-      foreach (var item in stores)
+      foreach (var item in storeSingleton.Stores)
       {
         System.Console.WriteLine(item);
       }

@@ -1,10 +1,10 @@
 namespace PizzaBox.Domain.Abstracts
 {
+  /// <summary>
+  /// Represents the Store Abstract Class
+  /// </summary>
   public abstract class AStore
   {
-    // field
-    // public string Name;
-
     public string Name { get; set; }
   }
 }
