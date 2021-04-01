@@ -55,9 +55,14 @@ The project should support objects of Customer, Store, Order, Pizza.
 
 ## timelines
 
-+ due on  at 11p Central
-+ present on  starting at 9.30a Central
++ due on _April 12_  at 11:59p Eastern (CODE FREEZE)
++ present on _April 14_ starting at 9.30a Central
 + implement as many requirements as you can (don't push to get all done)
++ expect mvp status for the project:
+  - able to order at least 1 pizza
+  - order should be saved in DB
+  - order should be retrieved back to UI
+  - should implement unit testing
 
 ## As a Customer
 
@@ -65,7 +70,7 @@ The project should support objects of Customer, Store, Order, Pizza.
 + should be able to view a list of available stores
 + should be able to select a store
 + should be able to place an order
-+ order should be either a custom pizza or a set of preset pizzas
++ order should be either a custom pizza or a preset pizzas
 + if a custom pizza is selected
   + should be able to select a crust, a size and a set of toppings
 + if a preset pizza is selected
@@ -76,13 +81,11 @@ The project should support objects of Customer, Store, Order, Pizza.
 + should be able to view the order history
 + should be able to make new order
 
-## store story
+## As a Store
 
-as a store, i should be able do this:
-
-+ access the application
-+ select options for order history, sales
-+ if order history
++ should be able to access the application
++ should be able to view an options menu for order history and sales report
++ should be able to select an option
 + select options for all store orders and orders associated to a user (filtering)
 + if sales
 + see pizza type, count, revenue by week or by month

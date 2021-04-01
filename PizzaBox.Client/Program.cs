@@ -18,12 +18,13 @@ namespace PizzaBox.Client
       System.Console.WriteLine("Welcome to PizzaBox");
 
       var storeSingleton = StoreSingleton.Instance;
-      // var s2 = new StoreSingleton();
 
       foreach (var item in storeSingleton.Stores)
       {
         System.Console.WriteLine(item);
       }
+
+      storeSingleton.WriteToFile();
     }
   }
 }
