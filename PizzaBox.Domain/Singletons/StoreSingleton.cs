@@ -31,32 +31,6 @@ namespace PizzaBox.Domain.Singletons
     /// </summary>
     private StoreSingleton()
     {
-      Stores = new List<AStore>()
-      {
-        new NewYorkStore(),
-        new ChicagoStore()
-      };
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public void WriteToFile()
-    {
-      var path = @"store.xml";
-      var writer = new StreamWriter(path);
-      var stores = Stores;
-      var xml = new XmlSerializer(typeof(List<AStore>));
-
-      xml.Serialize(writer, stores);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public void ReadFromFile()
-    {
-
     }
   }
 }

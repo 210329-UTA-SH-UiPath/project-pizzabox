@@ -20,7 +20,7 @@ namespace PizzaBox.Client
     /// <param name="args"></param>
     private static void Main(string[] args)
     {
-      Program.Run();
+      Run();
     }
 
     /// <summary>
@@ -43,14 +43,9 @@ namespace PizzaBox.Client
     /// <summary>
     /// 
     /// </summary>
-    private static void DisplayOrder()
+    private static void DisplayOrder(APizza pizza)
     {
-      var index = 0;
-
-      foreach (var item in _pizzaSingleton.Pizzas)
-      {
-        Console.WriteLine($"{++index} - {item}");
-      }
+      Console.WriteLine($"Your order is: {pizza}");
     }
 
     /// <summary>
@@ -86,10 +81,11 @@ namespace PizzaBox.Client
     private static APizza SelectPizza()
     {
       var input = int.Parse(Console.ReadLine());
+      var pizza = _pizzaSingleton.Pizzas[input - 1];
 
-      DisplayOrder();
+      DisplayOrder(pizza);
 
-      return _pizzaSingleton.Pizzas[input - 1];
+      return pizza;
     }
 
     /// <summary>
@@ -98,7 +94,7 @@ namespace PizzaBox.Client
     /// <returns></returns>
     private static AStore SelectStore()
     {
-      var input = int.Parse(Console.ReadLine());
+      var input = int.Parse(Console.ReadLine()); // be careful (think execpetion/error handling)
 
       DisplayPizzaMenu();
 
