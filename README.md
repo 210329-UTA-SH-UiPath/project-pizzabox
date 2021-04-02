@@ -41,7 +41,7 @@ The project should support objects of Customer, Store, Order, Pizza.
 + [required] each pizza must have no less than 2 default toppings
 + [required] each pizza must limit its toppings to no more 5
 
-### user
+### customer
 
 + [required] must be able to view/list its order history
 + [required] must be able to only order from 1 location in a 24-hour period with no reset
@@ -55,7 +55,7 @@ The project should support objects of Customer, Store, Order, Pizza.
 
 ## timelines
 
-+ due on _April 12_  at 11:59p Eastern (CODE FREEZE)
++ due on _April 12_ at 11:59p Eastern (CODE FREEZE)
 + present on _April 14_ starting at 9.30a Central
 + implement as many requirements as you can (don't push to get all done)
 + expect mvp status for the project:
