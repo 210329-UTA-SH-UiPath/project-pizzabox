@@ -5,14 +5,18 @@ namespace PizzaBox.Domain.Models
   /// <summary>
   /// 
   /// </summary>
-  public class NewYorkStore : AStore
+  public class Order
   {
+    public AStore Store { get; set; }
+    public Customer Customer { get; set; }
+    public APizza Pizza { get; set; }
+
     /// <summary>
     /// 
     /// </summary>
-    public NewYorkStore()
+    public void Save()
     {
-      Name = "NewYorkStore";
+
     }
   }
 }

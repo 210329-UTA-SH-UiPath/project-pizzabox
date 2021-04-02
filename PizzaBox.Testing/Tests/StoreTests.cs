@@ -3,8 +3,14 @@ using Xunit;
 
 namespace PizzaBox.Testing.Tests
 {
+  /// <summary>
+  /// 
+  /// </summary>
   public class StoreTests
   {
+    /// <summary>
+    /// 
+    /// </summary>
     [Fact]
     public void Test_StoreName()
     {

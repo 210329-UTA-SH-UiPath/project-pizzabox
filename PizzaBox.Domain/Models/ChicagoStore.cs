@@ -7,6 +7,9 @@ namespace PizzaBox.Domain.Models
   /// </summary>
   public class ChicagoStore : AStore
   {
+    /// <summary>
+    /// 
+    /// </summary>
     public ChicagoStore()
     {
       Name = "ChicagoStore";
