@@ -3,8 +3,9 @@ using System.IO;
 using System.Xml.Serialization;
 using PizzaBox.Domain.Abstracts;
 using PizzaBox.Domain.Models;
+using PizzaBox.Storing.Repositories;
 
-namespace PizzaBox.Domain.Singletons
+namespace PizzaBox.Client.Singletons
 {
   /// <summary>
   /// 
@@ -12,6 +13,8 @@ namespace PizzaBox.Domain.Singletons
   public class StoreSingleton
   {
     private static StoreSingleton _instance;
+    private static readonly FileRepository _fileRepository = new FileRepository();
+    private const string _path = @"store.xml";
     public List<AStore> Stores { get; set; }
     public static StoreSingleton Instance
     {
@@ -31,6 +34,7 @@ namespace PizzaBox.Domain.Singletons
     /// </summary>
     private StoreSingleton()
     {
+      Stores = _fileRepository.ReadFromFile<AStore>(_path);
     }
   }
 }

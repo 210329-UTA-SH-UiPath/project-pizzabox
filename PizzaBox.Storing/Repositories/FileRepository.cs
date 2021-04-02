@@ -30,13 +30,12 @@ namespace PizzaBox.Storing.Repositories
       }
     }
 
-    public List<AStore> ReadFromFile()
+    public List<T> ReadFromFile<T>(string path) where T : class
     {
-      var path = @"store.xml";
       var reader = new StreamReader(path);
-      var xml = new XmlSerializer(typeof(List<AStore>)); // POCO = plain old csharp object
+      var xml = new XmlSerializer(typeof(List<T>)); // POCO = plain old csharp object
 
-      return xml.Deserialize(reader) as List<AStore>; // if error => null
+      return xml.Deserialize(reader) as List<T>; // if error => null
       // return (List<AStore>) xml.Deserialize(reader); // if error => exception
     }
   }

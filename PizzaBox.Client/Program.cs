@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using PizzaBox.Domain.Abstracts;
 using PizzaBox.Domain.Models;
-using PizzaBox.Domain.Singletons;
+using PizzaBox.Client.Singletons;
 
 namespace PizzaBox.Client
 {

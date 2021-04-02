@@ -19,5 +19,14 @@ namespace PizzaBox.Domain.Abstracts
     {
 
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+      return $"{Name}";
+    }
   }
 }

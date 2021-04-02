@@ -3,7 +3,13 @@
   <AStore xsi:type="NewYorkStore">
     <Name>NewYorkStore</Name>
   </AStore>
+  <AStore xsi:type="NewYorkStore">
+    <Name>NewJerseyStore</Name>
+  </AStore>
   <AStore xsi:type="ChicagoStore">
     <Name>ChicagoStore</Name>
+  </AStore>
+  <AStore xsi:type="ChicagoStore">
+    <Name>MichiganStore</Name>
   </AStore>
 </ArrayOfAStore>
