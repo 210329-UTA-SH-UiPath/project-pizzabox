@@ -21,7 +21,7 @@ The project should support objects of Customer, Store, Order, Pizza.
 
 ### store
 
-+ [required] there should exist at least 2 stores for a user to choose from
++ [required] there should exist at least 2 stores for a customer to choose from
 + [required] each store should be able to view/list any and all of their completed/placed orders
 + [required] each store should be able to view/list any and all of their sales (amount of revenue weekly or monthly)
 
@@ -55,14 +55,14 @@ The project should support objects of Customer, Store, Order, Pizza.
 
 ## timelines
 
-+ due on _April 12_ at 11:59p Eastern (CODE FREEZE)
-+ present on _April 14_ starting at 9.30a Central
-+ implement as many requirements as you can (don't push to get all done)
-+ expect mvp status for the project:
-  - able to order at least 1 pizza
-  - order should be saved in DB
-  - order should be retrieved back to UI
-  - should implement unit testing
++ code-freeze on _April 12_ at 11:59p Eastern
++ presentation on _April 14_ starting at 9.30a Central
++ expect _mvp status_ for the project:
+  - able to order at least 1 pizza (custom or preset)
+  - able to save order in File-system and/or DB-system
+  - able to retrieve order and display to UI
+  - able to have unit test implementation (try at least 10)
+  - __implement of as many requirements as you can for Customer, Store, Pizza, Order__
 
 ## As a Customer
 
@@ -86,8 +86,12 @@ The project should support objects of Customer, Store, Order, Pizza.
 + should be able to access the application
 + should be able to view an options menu for order history and sales report
 + should be able to select an option
-+ select options for all store orders and orders associated to a user (filtering)
-+ if sales
-+ see pizza type, count, revenue by week or by month
++ if option for store orders
+  + should be able to view order history
++ if option for store orders by customer (filtering)
+  + should be able to view order history for a customer
++ if option for sales report
+  + should be able to view revenue by week (inlcuding pizza type and count per type)
+  + should be able to view revenue by month (including pizza type and count per type)
 
-> the goal is to try to complete as many reqs as you can in the time alloted. :)
+__the goal is to try to complete as many requirements as you can in the time alloted (absolutely no burnout). 😊__
